@@ -1,17 +1,20 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 class Solution:
     def isValid(self, s):
         """
         :type s: str
         :rtype: bool
         """
-        stack, lookup = [], {'(': ')', '[': ']', '{': '}'}
-        for parenthese in s:
-            if parenthese in lookup:
-                stack.append(parenthese)
-            elif not stack:
+        stack, dict = [], {'(': ')', '[': ']', '{': '}'}
+        for parentheses in s:
+            if parentheses in dict:       # 若dict有左括號，stack
+                stack.append(parentheses)
+            elif not stack:               # 若stack為空，return False
                 return False
-            elif lookup[stack.pop()] != parenthese:
-                return False
+            elif dict[stack.pop()] != parentheses:  # 若找不到右括號
+                return False                        # return False
         return not stack
     
     

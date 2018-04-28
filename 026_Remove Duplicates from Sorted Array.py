@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 class Solution:
     def removeDuplicates(self, nums):
         """
@@ -7,12 +10,12 @@ class Solution:
         if not nums:
             return 0
 
-        start = 0
+        count = 0
         for i in range(1, len(nums)):
-            if nums[i] != nums[start]:
-                start += 1
-                nums[start] = nums[i]
-        return start + 1
+            if nums[i] != nums[count]:
+                count += 1
+                nums[count] = nums[i]
+        return count + 1
 
 
 if __name__ == "__main__":
