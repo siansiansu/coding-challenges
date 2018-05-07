@@ -6,6 +6,6 @@ class Solution(object):
         """
         reverse = s[::-1].split()
         return ' '.join([word[::-1] for word in reverse])
-    
+
 if __name__ == "__main__":   
     print(Solution().reverseWords("the sky is blue"))  

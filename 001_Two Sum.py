@@ -1,18 +1,21 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-class Solution(object):
+class Solution:
     def twoSum(self, nums, target):
         """
         :type nums: List[int]
         :type target: int
         :rtype: List[int]
         """
-        lookup = {}
-        for i, num in enumerate(nums):
-            if target - num in lookup:
-                return [lookup[target - num], i]
-            lookup[num] = i
+        dict = {}
+        for index, num in enumerate(nums):
+            if target - num in dict:
+                return (dict[target - num], index)
+            dict[num] = index
+            
+            
+            
 
     def twoSum2(self, nums, target):
         """
@@ -27,6 +30,9 @@ class Solution(object):
             tmp_nums = nums[k:]
             if j in tmp_nums:
                 return [k - 1, tmp_nums.index(j) + k]
+            
+            
+            
 
     def twoSum3(self, nums, target):
         """
