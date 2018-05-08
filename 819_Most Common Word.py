@@ -8,14 +8,11 @@ class Solution(object):
         :type banned: List[str]
         :rtype: str
         """
-        paragraph = paragraph.replace(".", "").split()
-        counts = 0
-        results = 0
-        for i in range(len(paragraph)):
-            if paragraph[i] in paragraph:
-                counts += 1
-            results = max(results, counts)
-        return results
+        import re
+        import collections
+
+        sub = re.split(r'[^a-zA-Z]{1,2}', paragraph)
+        return sub
 
 
 
