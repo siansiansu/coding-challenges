@@ -8,10 +8,10 @@ class Solution(object):
         :rtype: int
         """
         sign = (x>0)-(x<0)
-        x = int(str(sign*x)[::-1])
+        x = sign * int(str(abs(x))[::-1])
         x = 0 if abs(x) > 0x7FFFFFFF else x
         
-        return sign*x       
+        return x
 
 if __name__ == "__main__":
     print (Solution().reverse(123))
