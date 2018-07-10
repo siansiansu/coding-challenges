@@ -17,3 +17,6 @@ class Solution:
     
 if __name__ == "__main__":    
     print(Solution().plusOne([1,2,3,4]))
+
+
+

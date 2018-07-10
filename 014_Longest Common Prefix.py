@@ -14,5 +14,9 @@ class Solution:
                 return strs[0][:i]
         return min(strs)
 
+
 if __name__ == "__main__":
     print(Solution().longestCommonPrefix(['abde', 'ab', 'ab']))
+
+
+
