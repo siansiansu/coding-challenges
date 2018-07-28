@@ -3,6 +3,10 @@
 
 class Solution:
     def longestCommonPrefix1(self, strs):
+        """
+        :type strs: List[str]
+        :rtype: str
+        """ 
         if not strs: return ""
         
         res = ""
@@ -11,6 +15,20 @@ class Solution:
                 if i > len(strs[j]) or strs[j][i] != strs[0][i]:
                     return res
             res += strs[0][i]
+        return res
+
+    def longestCommonPrefix2(self, strs):
+        """
+        :type strs: List[str]
+        :rtype: str
+        """
+        if not strs: return ''
+        strs.sort()
+        res = ''
+        for ix in range(len(strs[0])):
+            if ix >= len(strs[-1]) or strs[-1][ix] != strs[0][ix]:
+                return res
+            res += strs[0][ix]
         return res
 
 
