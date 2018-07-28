@@ -48,3 +48,5 @@ class Solution:
 if __name__ == "__main__":
     strs = ["flower","flow","flight"] 
     print(Solution().longestCommonPrefix1(strs))
+    print(Solution().longestCommonPrefix2(strs))
+    print(Solution().longestCommonPrefix3(strs))
