@@ -1,0 +1,25 @@
+language: python
+
+python: "3.6"
+
+sudo: false
+
+addons:
+  apt:
+    packages:
+    - python-pip
+
+install:
+  - pip install codecov 
+  - pip install pytest 
+  - pip install pytest-cov
+
+script:
+  - pytest --cov=./
+
+after_success:
+  - codecov
+  
+notifications:
+  email: false
+  slack: minsiansu:$SLACK_TOKEN
