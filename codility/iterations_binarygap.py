@@ -15,3 +15,6 @@ def solution(N):
         else:
             cnt = 0
     return ans
+
+def solution2(N):
+    return len(max(format(N, "b").strip("0").split("1")))

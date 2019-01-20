@@ -1,4 +1,7 @@
 from codility import iterations_binarygap
 
 def test_binary_gap():
-    assert iterations_binarygap.solution(1041) == 5
+    ans1 = iterations_binarygap.solution(1041)
+    ans2 = iterations_binarygap.solution2(1041)
+    assert (ans1 == 5) and (ans2 == 5)
+    
