@@ -2,8 +2,6 @@ from codility import iterations_BinaryGap
 from codility import arrays_OddOccurrencesInArray
 from codility import arrays_CyclicRotation
 
-
-
 def test_binary_gap():
     ans1 = iterations_BinaryGap.solution(1041)
     ans2 = iterations_BinaryGap.solution2(1041)
