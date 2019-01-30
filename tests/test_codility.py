@@ -1,6 +1,7 @@
 from codility import iterations_binary_gap
 from codility import arrays_odd_occurrences_in_array
 from codility import arrays_cyclic_rotation
+from codility import time_complexity_frog_jmp
 
 def test_binary_gap():
     ans1 = iterations_binary_gap.solution(1041)
@@ -14,3 +15,7 @@ def test_odd_occurrences_in_array():
 def test_cyclic_rotation():
     ans1 = arrays_cyclic_rotation.solution([3, 8, 9, 7, 6], 3)
     assert ans1 == [9, 7, 6, 3, 8]
+
+def test_frog_jmp():
+    ans1 = time_complexity_frog_jmp.solution(10, 85, 30)
+    assert ans1 == 3
