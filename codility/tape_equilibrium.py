@@ -3,12 +3,11 @@
 
 def solution(A):
     # write your code in Python 3.6
-    head = A[0]
-    tail = sum(A[1:])
-    min_dif = abs(head - tail)
-    for index in range(1, len(A)-1):
-        head += A[index]
-        tail -= A[index]
-        if abs(head-tail) < min_dif:
-            min_dif = abs(head-tail)
-    return min_dif
+    head = 0
+    tail = sum(A)
+    res = float('Inf')
+    for ixn in A[:-1]:
+        head += ixn
+        tail -= ixn
+        res = min(res, abs(head - tail))
+    return res
