@@ -5,6 +5,8 @@ from codility import frog_jmp
 from codility import perm_missing_elem
 from codility import tape_equilibrium
 from codility import perm_check
+from codility import missing_integer
+from codility import distinct
 
 def test_binary_gap():
     ans1 = binary_gap.solution(1041)
@@ -34,3 +36,11 @@ def test_tape_equilibrium():
 def test_perm_check():
     ans1 = perm_check.solution([4, 1, 3, 2])
     assert ans1 == 1
+
+def test_missing_integer():
+    ans1 = missing_integer.solution([1, 2, 3])
+    assert ans1 == 4
+
+def test_distinct():
+    ans1 = distinct.solution([2, 1, 1, 2, 3, 1])
+    assert ans1 == 3
