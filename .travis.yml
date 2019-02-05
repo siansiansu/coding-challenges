@@ -4,22 +4,17 @@ python: "3.6"
 
 sudo: false
 
-addons:
-  apt:
-    packages:
-    - python-pip
+env:
+  - TOXENV=py26
+  - TOXENV=py27
+  - TOXENV=py32
+  - TOXENV=py33
+  - TOXENV=pypy
 
 install:
-  - pip install codecov 
-  - pip install pytest 
-  - pip install pytest-cov
-  - pip install flake8
+  - pip install tox --use-mirrors
 
-before_script:
-    - flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
-    - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
-script:
-  - pytest --cov=./
+script: tox
 
 after_success:
   - codecov
