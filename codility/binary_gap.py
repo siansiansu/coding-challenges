@@ -5,7 +5,7 @@
 def solution(N):
     # write your code in Python 3.6
     _list = bin(N)[2:]
-    
+
     cnt = 0
     ans = 0
     for i in _list:
