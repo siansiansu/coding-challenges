@@ -13,3 +13,18 @@
 - [HackerEarth](https://www.hackerearth.com/) - Hackathons, Innovation Management, and Technical Recruitment Software And Helps Companies Fast-track Their Growth.
 
 - [Python Tutor](http://www.pythontutor.com/visualize.html#mode=edit) - Visualize Python, Java, JavaScript, C, C++, Ruby code execution.
+
+
+## Algorithms
+
+### Strings
+- Knuth–Morris–Pratt (KMP) Algorithm
+- Levenshtein Distance - 兩個字串之間，由一個轉換成另外一個所花費的最少編輯次數。
+- Manacher
+- Minimum cost to construct a string
+- Rabin–Karp Algorithm
+
+
+### sorts
+- Bogo Sort
+- Buddle Sort
