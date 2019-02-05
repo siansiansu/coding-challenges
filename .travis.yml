@@ -12,7 +12,7 @@ env:
   - TOXENV=pypy
 
 install:
-  - pip install tox --use-mirrors
+  - pip install tox-travis
 
 script: tox
 
