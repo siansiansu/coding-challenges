@@ -10,8 +10,7 @@ from codility import distinct
 
 def test_binary_gap():
     ans1 = binary_gap.solution(1041)
-    ans2 = binary_gap.solution2(1041)
-    assert (ans1 == 5) and (ans2 == 5)
+    assert ans1 == 5
 
 def test_odd_occurrences_in_array():
     ans1 = odd_occurrences_in_array.solution([9, 3, 9, 3, 9, 7, 9])

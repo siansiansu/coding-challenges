@@ -7,4 +7,4 @@ def solution(A):
     start = 1
     end = len(A) + 1
     total = ((start + end) * (N + 1)) / 2
-    return int(total- sum(A))
+    return int(total - sum(A))
