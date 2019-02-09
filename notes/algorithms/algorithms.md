@@ -1,16 +1,3 @@
-## Algorithm Design
-- Incremental Method
-- Memoization
-- Enumeration
-- Iterative Method
-- Recursive Method
-- Greedy Method
-- Divide and Conquer
-- Scaling Algorithm
-- External Memory Algorithm
-- Parallel Algorithm 
-- Randomized Algorithm
-
 ## Algorithms
 
 ### Strings
@@ -20,7 +7,27 @@
 - Minimum cost to construct a string
 - Rabin–Karp Algorithm
 
-
 ### sorts
 - Bogo Sort
 - Buddle Sort
+- Bucket Sort
+- cocktail Shaker Sort
+- Comb Sort
+- Counting Sort
+- Cyclesort
+- External Sort
+- Heap Sort
+- Insertion Sort
+- Merge Sort
+- Merge Sort Fastest
+- Normal Distribution Quick Sort
+- Pancake Sort
+- Quick Sort
+- Quick Sort 3 Partition
+- Radix Sort
+- Random Normal Distribution Quicksort
+- Selection Sort
+- Shell Sort
+- Timsort
+- Topological Sort
+- Tree Sort
