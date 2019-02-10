@@ -1,33 +1,27 @@
+group: travis_latest
 language: python
-
+cache: pip
 python:
-  # - "3.5"
-  - "3.6"
+  - 3.6
 
-sudo: true
-
-addons:
-  apt:
-    packages:
-    - python-pip
-
-before_install:
-    - sudo apt-get update
-    - sudo apt-get -y install python-pip
-    - sudo pip install --upgrade pip
-    - pip install --upgrade pip
-
+matrix:
+  allow_failures:
+    - python: 3.6
+    - python: nightly
+    - python: pypy
+    - python: pypy3
 install:
-  - pip install codecov 
-  - pip install pytest 
-  - pip install pytest-cov
+  - pip install flake8
+before_script:
+  - flake8 . --count --select=E901,E999,F821,F822,F823 --show-source --statistics
+  - flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
 
 script:
-  - pytest --cov=./
+  - true  --cov=./
 
 after_success:
   - codecov
-  
+
 notifications:
   email: false
   slack: minsiansu:$SLACK_TOKEN
