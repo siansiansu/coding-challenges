@@ -1,6 +1,6 @@
-# [LeetCode](https://leetcode.com/) ![](https://img.shields.io/github/languages/top/siansiansu/leetcode-problems.svg?style=flat) ![](https://img.shields.io/github/languages/count/siansiansu/leetcode-problems.svg?style=flat) [![Build Status](https://travis-ci.org/siansiansu/leetcode-problems.svg?branch=master)](https://travis-ci.org/siansiansu/leetcode-problems) ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg) ![](https://img.shields.io/badge/say-thanks-blue.svg)
+# [LeetCode](https://leetcode.com/) ![](https://img.shields.io/github/languages/top/siansiansu/leetcode-problems.svg?style=flat) ![](https://img.shields.io/github/languages/count/siansiansu/leetcode-problems.svg?style=flat) [![Build Status](https://travis-ci.org/siansiansu/leetcode-problems.svg?branch=master)](https://travis-ci.org/siansiansu/leetcode-problems) ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg) ![](https://img.shields.io/badge/say-thanks-ff69b4.svg)
 
-## Coding Challenges Websites
+### Coding Challenges Websites
 
 - [Coderbyte](https://coderbyte.com/) - The #1 Website for Coding Challenges.
 
@@ -29,3 +29,30 @@
 - [Python Tutor](http://www.pythontutor.com/visualize.html#mode=edit) - Visualize Python, Java, JavaScript, C, C++, Ruby code execution.
 
 - [TopCoder](https://www.topcoder.com/challenges/) - Design & Build High-Quality Software with Crowdsourcing.
+
+### Algorithms
+
+- Bit Manipulation
+- Array
+- String
+- Linked List
+- Stack
+- Queue
+- Heap
+- Tree
+- Hash Table
+- Math
+- Two Pointers
+- Sort
+- Recursion
+- Binary Search
+- Binary Search Tree
+- Breadth-First Search
+- Depth-First Search
+- Backtracking
+- Dynamic Programming
+- Greedy
+- Graph
+- Geometry
+- Simulation
+- Design
