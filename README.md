@@ -1,6 +1,4 @@
-# LeetCode-Problems
-
-[![Build Status](https://travis-ci.org/siansiansu/leetcode-problems.svg?branch=master)](https://travis-ci.org/siansiansu/leetcode-problems) [![codecov](https://codecov.io/gh/siansiansu/leetcode-problems/branch/master/graph/badge.svg)](https://codecov.io/gh/siansiansu/leetcode-problems) [![codebeat badge](https://codebeat.co/badges/9a121f43-0c3c-4200-8d91-04dad0cdaa97)](https://codebeat.co/projects/github-com-siansiansu-leetcode-problems-master) ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
+# [LeetCode-Problems](https://leetcode.com/) ![](https://img.shields.io/github/languages/top/siansiansu/leetcode-problems.svg?style=flat) ![](https://img.shields.io/github/languages/count/siansiansu/leetcode-problems.svg?style=flat) [![Build Status](https://travis-ci.org/siansiansu/leetcode-problems.svg?branch=master)](https://travis-ci.org/siansiansu/leetcode-problems) ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
 
 ## Coding Challenges Websites
 
