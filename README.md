@@ -1,6 +1,6 @@
 # [LeetCode](https://leetcode.com/) ![](https://img.shields.io/github/languages/top/siansiansu/leetcode-problems.svg?colorB=blue&style=flat) ![](https://img.shields.io/github/languages/count/siansiansu/leetcode-problems.svg?style=flat) [![Build Status](https://travis-ci.org/siansiansu/leetcode-problems.svg?branch=master)](https://travis-ci.org/siansiansu/leetcode-problems) ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg) ![](https://img.shields.io/badge/training-skills-ff69b4.svg)
 
-- :star: Solving algorithms, data structure and SQL questions. :star:
+:star: Solving algorithms, data structure and SQL questions :star:
 
 ## Coding Challenges Websites
 
