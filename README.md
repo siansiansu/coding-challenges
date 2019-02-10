@@ -1,4 +1,8 @@
-# [LeetCode](https://leetcode.com/) ![](https://img.shields.io/github/languages/top/siansiansu/leetcode-problems.svg?colorB=blue&style=flat) ![](https://img.shields.io/github/languages/count/siansiansu/leetcode-problems.svg?style=flat) [![Build Status](https://travis-ci.org/siansiansu/leetcode-problems.svg?branch=master)](https://travis-ci.org/siansiansu/leetcode-problems) ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg) ![](https://img.shields.io/badge/say-thanks-ff69b4.svg)
+# [LeetCode](https://leetcode.com/) ![](https://img.shields.io/github/languages/top/siansiansu/leetcode-problems.svg?colorB=blue&style=flat) ![](https://img.shields.io/github/languages/count/siansiansu/leetcode-problems.svg?style=flat) [![Build Status](https://travis-ci.org/siansiansu/leetcode-problems.svg?branch=master)](https://travis-ci.org/siansiansu/leetcode-problems) ![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)
+
+- Solving algorithms, data structure and SQL questions.
+- Feel free to give suggestions.
+- Coding GO GO :sunglasses:
 
 ## Coding Challenges Websites
 
