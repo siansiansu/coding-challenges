@@ -9,3 +9,7 @@
 # VScode
 .vscode
 ./.vscode
+
+
+Pipfile
+Pipfile.lock
