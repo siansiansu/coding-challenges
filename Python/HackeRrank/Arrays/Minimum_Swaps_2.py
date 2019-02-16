@@ -10,17 +10,15 @@ import sys
 
 
 def minimumSwaps(arr):
-    swap = 0
-    i = 0
-    while i < len(arr):
-        # Bug in input data which violates problem constraints
-        if len(arr) == 7 and i == 6:
-            break
-        if arr[i] == (i+1):
+    new_arr = [i - 1 for i in arr]        # 將 arr 調整成從 0 起始。
+    swap = i = 0
+    while i < len(new_arr):
+        if new_arr[i] == (i):  # 如果該數字位置正確，則不用 swap。
             i += 1
             continue
-        arr[arr[i]-1], arr[i] = arr[i], arr[arr[i]-1]
-        swap += 1
+        # 將數字交換到正確的位置。
+        new_arr[new_arr[i]], new_arr[i] = new_arr[i], new_arr[new_arr[i]]
+        swap += 1   # 計算交換的次數。
     return swap
 
 

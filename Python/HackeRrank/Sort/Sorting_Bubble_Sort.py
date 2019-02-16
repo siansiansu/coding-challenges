@@ -10,18 +10,20 @@ import sys
 
 
 def countSwaps(a):
-    numSwaps = 0
-    while True:
-        SwapsFlag = False
-        for i in range(len(a) - 1):
-            if a[i] > a[i + 1]:
-                a[i], a[i + 1] = a[i + 1], a[i]
-                numSwaps += 1
-                SwapsFlag = True
-        if not SwapsFlag:
+    count = 0
+    swapped = False
+
+    for i in range(len(a) - 1):
+        swapped = False
+        for j in range(len(a) - 1 - i):
+            if a[j] > a[j + 1]:
+                a[j], a[j + 1] = a[j + 1], a[j]
+                count += 1
+                swapped = True
+        if not swapped:
             break
 
-    print('Array is sorted in', numSwaps, 'swaps.')
+    print('Array is sorted in', count, 'swaps.')
     print('First Element:', a[0])
     print('Last Element:', a[-1])
 

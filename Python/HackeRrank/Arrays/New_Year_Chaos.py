@@ -11,13 +11,15 @@ import sys
 
 def minimumBribes(q):
     moves = 0
-    q = [P-1 for P in q]
-    for i, P in enumerate(q):
-        if P - i > 2:
+    q = [i - 1 for i in q]
+
+    for ix, ixn in enumerate(q):
+        if ixn - ix > 2:    # 如果原來的位置 ixn - 後來的位置大於 2，則 return "Too chaotic"，因為一個人最多只能賄絡兩次。
             print("Too chaotic")
             return
-        for j in range(max(P-1, 0), i):
-            if q[j] > P:
+
+        for j in range(max(ixn - 1, 0), ix):
+            if q[j] > ixn:
                 moves += 1
     print(moves)
 
