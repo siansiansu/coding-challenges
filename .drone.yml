@@ -1,4 +1,8 @@
-build:
+kind: pipeline
+name: default
+
+steps:
+- name: basic drone
   image: python:$$PYTHON_VERSION
   commands:
     - pip install flake8
