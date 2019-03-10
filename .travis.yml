@@ -26,5 +26,3 @@ after_success:
 notifications:
   email: false
   slack: minsiansu:$SLACK_TOKEN
-    on_success: change 
-    on_failure: always 
