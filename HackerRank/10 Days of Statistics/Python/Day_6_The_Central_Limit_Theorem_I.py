@@ -7,8 +7,8 @@ mu = 49 * 205
 sigma = math.sqrt(49) * 15
 
 
-def normal_distro_cdf(x, mu, sigma):
-    return "%.4f" % (1/2 * (1 + math.erf((x - mu) / (sigma * math.sqrt(2)))))
+def cdf(x, mu, sigma): return 0.5 * \
+    (1 + math.erf((x - mu) / (sigma * math.sqrt(2))))
 
 
-print(normal_distro_cdf(x, mu, sigma))
+print("%.4f" % (cdf(x, mu, sigma)))

@@ -1,11 +1,12 @@
 # Enter your code here. Read input from STDIN. Print output to STDOUT
 
-samples = float(input())
-mean = float(input())
-sd = float(input())
-interval = float(input())
-z = float(input())
+samples = 100
+mu = 500
+sigma = 80
+interval = 0.95
+z = 1.96
 
-sd_sample = sd / (samples**0.5)
-print(round(mean - sd_sample*z, 2))
-print(round(mean + sd_sample*z, 2))
+sd_sample = sigma / (samples ** 0.5)
+
+print('%.2f' % (mu - sd_sample * z))
+print('%.2f' % (mu + sd_sample * z))

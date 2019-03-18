@@ -2,11 +2,13 @@
 
 import math
 
-mean_ = 2.4*100
-std_ = 100**(1/2)*2.0
+x = 250
+mu = 2.4*100
+sigma = 100**(1/2)*2.0
 
-cdf = lambda x: 0.5 * (1 + math.erf((x - mean_) / (std_ * (2 ** 0.5))))
 
-result = cdf(250.0)
+def cdf(x, mu, sigma): return 0.5 * \
+    (1 + math.erf((x - mu) / (sigma * (2 ** 0.5))))
 
-print ('{:.4f}'.format(result))
+
+print('%.4f' % cdf(x, mu, sigma))
