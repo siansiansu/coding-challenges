@@ -2,9 +2,13 @@
 
 import math
 
+x = 9800
+mu = 49 * 205
+sigma = math.sqrt(49) * 15
 
-def less_than_boundary_cdf(x, mean, std):
-    return round(0.5 * (1 + math.erf((x - mean) / (std * math.sqrt(2)))), 4)
+
+def normal_distro_cdf(x, mu, sigma):
+    return "%.4f" % (1/2 * (1 + math.erf((x - mu) / (sigma * math.sqrt(2)))))
 
 
-print(less_than_boundary_cdf(9800, 49 * 205, math.sqrt(49) * 15))
+print(normal_distro_cdf(x, mu, sigma))
